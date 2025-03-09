@@ -7,11 +7,12 @@ import Car from "./components/Car";
 import Garage from "./components/Garage";
 import Header from "./components/Header";
 import FavouriteColor from "./components/FovouriteColor";
+import Bike from "./components/Bike";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
  <React.StrictMode>
-  <FavouriteColor />
+  <Bike />
  </React.StrictMode>
 );
 
