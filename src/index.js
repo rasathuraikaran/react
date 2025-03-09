@@ -8,11 +8,12 @@ import Garage from "./components/Garage";
 import Header from "./components/Header";
 import FavouriteColor from "./components/FovouriteColor";
 import Bike from "./components/Bike";
+import Schooter from "./components/Schooter";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
  <React.StrictMode>
-  <Bike />
+  <Schooter />
  </React.StrictMode>
 );
 
