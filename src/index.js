@@ -9,11 +9,13 @@ import Header from "./components/Header";
 import FavouriteColor from "./components/FovouriteColor";
 import Bike from "./components/Bike";
 import Schooter from "./components/Schooter";
+import List from "./components/List";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
  <React.StrictMode>
   <Bike />
+  <List />
  </React.StrictMode>
 );
 
