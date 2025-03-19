@@ -13,7 +13,7 @@ import Schooter from "./components/Schooter";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
  <React.StrictMode>
-  <Schooter />
+  <Bike />
  </React.StrictMode>
 );
 
