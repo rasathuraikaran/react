@@ -10,12 +10,14 @@ import FavouriteColor from "./components/FovouriteColor";
 import Bike from "./components/Bike";
 import Schooter from "./components/Schooter";
 import List from "./components/List";
+import Timer from "./components/Timer";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
  <React.StrictMode>
   <Bike />
   <List />
+  <Timer />
  </React.StrictMode>
 );
 
