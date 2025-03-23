@@ -8,42 +8,27 @@ function Myform() {
    return previousState + 1;
   });
  }
+
+ function handleChange(e) {
+  const name = e.target.name;
+  const value = e.target.value;
+  return setInputs((previousState) => {
+   return { ...previousState, [name]: value };
+  });
+ }
  return (
   <form onSubmit={handleSub}>
    <label>
-    Enter your name :{" "}
-    <input
-     type="text"
-     onChange={(event) =>
-      setInputs((previousState) => {
-       return { ...previousState, name: event.target.value };
-      })
-     }
-    />
+    Enter your name : <input type="text" name="name" onChange={handleChange} />
    </label>
    <br />
    <label>
-    Enter your Age :{" "}
-    <input
-     type="age"
-     onChange={(event) =>
-      setInputs((previousState) => {
-       return { ...previousState, age: event.target.value };
-      })
-     }
-    />
+    Enter your Age : <input type="age" name="age" onChange={handleChange} />
    </label>
    <br />
    <label>
     Enter your Email :{" "}
-    <input
-     type="email"
-     onChange={(event) =>
-      setInputs((previousState) => {
-       return { ...previousState, email: event.target.value };
-      })
-     }
-    />
+    <input type="email" name="email" onChange={handleChange} />
    </label>
 
    <br />
