@@ -10,7 +10,9 @@ function Timer() {
  useEffect(() => {
   console.log("screen is rendered ");
 
-  setCount(1);
+  setTimeout(() => {
+   setCount(1);
+  }, 1000);
   //checkedcount();
  }, []);
  function updateCount() {
