@@ -4,10 +4,12 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 
 import Timer from "./components/Timer";
+import Myform from "./components/Myform";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
  <React.StrictMode>
+  <Myform />
   <Timer />
  </React.StrictMode>
 );
