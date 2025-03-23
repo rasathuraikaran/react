@@ -1,13 +1,18 @@
 import { useEffect, useState } from "react";
 
 function Timer() {
- const [count, setCount] = useState(1);
+ const [count, setCount] = useState(-1);
 
  useEffect(() => {
   console.log("screen is rendered ");
   checkedcount();
  }, [count]);
+ useEffect(() => {
+  console.log("screen is rendered ");
 
+  setCount(1);
+  //checkedcount();
+ }, []);
  function updateCount() {
   setCount((previousState) => previousState + 1);
  }
