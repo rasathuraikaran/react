@@ -11,10 +11,10 @@ function Timer() {
   console.log("screen is rendered ");
 
   setTimeout(() => {
-   setCount((previousState) => previousState + 1);
+   setCount((num) => num + 1);
   }, 1000);
   //checkedcount();
- });
+ }, []);
  function updateCount() {
   setCount((previousState) => previousState + 1);
  }
