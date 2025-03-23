@@ -1,6 +1,6 @@
 import { useState } from "react";
 function Myform() {
- const [inputs, setInputs] = useState({});
+ const [inputs, setInputs] = useState({ number: "+94" });
  const [count, setCount] = useState(0);
  function handleSub(e) {
   e.preventDefault();
@@ -33,7 +33,12 @@ function Myform() {
    <br />
    <label>
     Enter your Phone Number :{" "}
-    <input type="text" name="number" onChange={handleChange} />
+    <input
+     type="text"
+     name="number"
+     value={inputs.number}
+     onChange={handleChange}
+    />
    </label>
    <br />
    <input type="submit" value="Submit form " />
