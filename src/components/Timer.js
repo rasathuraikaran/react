@@ -5,12 +5,18 @@ function Timer() {
 
  useEffect(() => {
   console.log("screen is rendered ");
+  checkedcount();
  }, [count]);
 
  function updateCount() {
   setCount((previousState) => previousState + 1);
  }
 
+ function checkedcount() {
+  if (count > 10) {
+   setCount(1);
+  }
+ }
  return (
   <div>
    <h1>I have reddered {count}</h1>
@@ -18,4 +24,4 @@ function Timer() {
   </div>
  );
 }
-export default Timer
+export default Timer;
