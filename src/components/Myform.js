@@ -30,7 +30,11 @@ function Myform() {
     Enter your Email :{" "}
     <input type="email" name="email" onChange={handleChange} />
    </label>
-
+   <br />
+   <label>
+    Enter your Phone Number :{" "}
+    <input type="text" name="number" onChange={handleChange} />
+   </label>
    <br />
    <input type="submit" value="Submit form " />
    <br />
@@ -41,6 +45,8 @@ function Myform() {
    <label htmlFor="">The AGE is {inputs.age}</label>
    <br />
    <label htmlFor="">The Email is {inputs.email}</label>
+   <br />
+   <label htmlFor="">The number is {inputs.number}</label>
   </form>
  );
 }
