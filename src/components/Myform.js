@@ -14,7 +14,11 @@ function Myform() {
     Enter your name :{" "}
     <input
      type="text"
-     onChange={(event) => setInputs({ name: event.target.value })}
+     onChange={(event) =>
+      setInputs((previousState) => {
+       return { ...previousState, name: event.target.value };
+      })
+     }
     />
    </label>
    <br />
@@ -22,7 +26,11 @@ function Myform() {
     Enter your Age :{" "}
     <input
      type="age"
-     onChange={(event) => setInputs({ age: event.target.value })}
+     onChange={(event) =>
+      setInputs((previousState) => {
+       return { ...previousState, age: event.target.value };
+      })
+     }
     />
    </label>
    <br />
@@ -30,7 +38,11 @@ function Myform() {
     Enter your Email :{" "}
     <input
      type="email"
-     onChange={(event) => setInputs({ email: event.target.value })}
+     onChange={(event) =>
+      setInputs((previousState) => {
+       return { ...previousState, email: event.target.value };
+      })
+     }
     />
    </label>
 
