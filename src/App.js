@@ -1,7 +1,7 @@
 import "./App.css";
-import { useEffect } from "react";
+import React, { useState } from "react";
 function App() {
- const [term, setTerm] = useEffect("");
+ const [term, setTerm] = useState("");
 
  function handleChange(e) {
   setTerm(e.target.value);
