@@ -2,15 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-
+import App from "./App.js";
 import Timer from "./components/Timer";
 import Myform from "./components/Myform";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
  <React.StrictMode>
-  <Myform />
-  <Timer />
+  <App />
  </React.StrictMode>
 );
 
