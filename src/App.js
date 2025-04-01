@@ -1,7 +1,10 @@
 import "./App.css";
 import Result from "./Result"; // Import the Result component
 import React, { useState } from "react";
-
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./components/Home";
+import About from "./components/About";
+import Contact from "./components/Contact";
 const snum = Math.floor(Math.random() * 10) + 1; // Generate a random number between 1-10
 
 function App() {
@@ -13,20 +16,11 @@ function App() {
 
  return (
   <div className="container">
-   <div className="header">
-    <label htmlFor="term">
-     Guess the number between 1-10. Answer is {snum}
-    </label>
-    <br />
-    <input
-     type="number"
-     id="term"
-     name="term"
-     onChange={handleChange}
-     value={term}
-    />
-   </div>
-   <Result snum={snum} term={term} />
+   <BrowserRouter>
+    <Routes>
+     <Route path="/" element={<About />} />
+    </Routes>
+   </BrowserRouter>
   </div>
  );
 }
