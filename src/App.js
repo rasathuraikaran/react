@@ -7,6 +7,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import User from "./components/User";
 import Login from "./components/Login";
+import DashBord from "./components/DashBord";
 const snum = Math.floor(Math.random() * 10) + 1; // Generate a random number between 1-10
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
      <Route path="/c" element={<Contact />} />
      <Route path="/user/:id" element={<User />} />
      <Route path="/login" element={<Login />} />
+     <Route path="/dashbord" element={<DashBord />} />
     </Routes>
    </BrowserRouter>
   </div>
