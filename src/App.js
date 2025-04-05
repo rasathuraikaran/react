@@ -18,7 +18,9 @@ function App() {
   <div className="container">
    <BrowserRouter>
     <Routes>
-     <Route path="/" element={<About />} />
+     <Route path="/" element={<Home />} />
+     <Route path="/a" element={<About />} />
+     <Route path="/c" element={<Contact />} />
     </Routes>
    </BrowserRouter>
   </div>
