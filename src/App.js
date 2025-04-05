@@ -1,7 +1,7 @@
 import "./App.css";
 import Result from "./Result"; // Import the Result component
 import React, { useState } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 import Home from "./components/Home";
 import About from "./components/About";
 import Contact from "./components/Contact";
@@ -17,6 +17,17 @@ function App() {
  return (
   <div className="container">
    <BrowserRouter>
+    <ul>
+     <li>
+      <Link to="/">Home</Link>
+     </li>
+     <li>
+      <Link to="/a">AboutUs</Link>
+     </li>
+     <li>
+      <Link to="/c">ContactUs</Link>
+     </li>
+    </ul>
     <Routes>
      <Route path="/" element={<Home />} />
      <Route path="/a" element={<About />} />
